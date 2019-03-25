@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer App</title>
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- bootstrap css cdn -->
+  <!-- screen.css file -->
+  <link rel="stylesheet" href="./css/screen.css">
+  <!-- jquery and bootstrap js files cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+  <div class='container'>
+    <h1>Wikipedia API search</h1>
+    <h1>fcc Front End Development</h1>
+    <div class='random'>
+      <a href= 'https://en.wikipedia.org/wiki/Special:Random' id='here' target='_blank'>
+        <div class='search'>
+      <a href='https://en.wikipedia.org/wiki/Special:Random' id='here' target='_blank' class="fa fa-question-circle-o fa-3x" aria-hidden="true"></a>
+        </div></a>                                                                     Click the figure to search a random topic; 
+      or type in the textbox to search a specific topic of interest. 
+    </div>  
+
+  <div class='searchText'>
+      
+<!-- form for search input -->
+      <form class="form" action="javascript:void(0);">
+        <div class="input-group">
+          <input type="text" name="query" id="query" class="form-control input-lg" placeholder="Search">
+          <div class="input-group-addon btn" id="search">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<!-- container div to render the search results from Wikipedia -->
+  <div class="container">
+    <div id="res">
+    </div>
+  </div>
+<br>    
+ <script src="./js/script.js"></script>
+</body>
+</html>
